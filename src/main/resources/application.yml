@@ -4,10 +4,14 @@ spring:
       localhost:9092
     consumer:
       group-id: groupKyu
-      auto-offset-reset: latest #?? ??? ??? ???? offeset reset
-      enable-auto-commit: true #ack? ???? ???
+      auto-offset-reset: latest #가장 최근에 생산된 메시지로 offeset reset
+      enable-auto-commit: true #ack를 자동으로 보내기
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+  redis:
+    host: localhost
+    port: 6379

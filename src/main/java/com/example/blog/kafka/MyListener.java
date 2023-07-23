@@ -1,11 +1,8 @@
-package com.example.kafka.blog;
+package com.example.blog.kafka;
 
-import lombok.Getter;
-import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.Consumer;
 import org.apache.kafka.common.TopicPartition;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.kafka.listener.ConsumerAwareRebalanceListener;
 import org.springframework.stereotype.Component;
 

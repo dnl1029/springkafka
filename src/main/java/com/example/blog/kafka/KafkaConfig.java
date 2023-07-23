@@ -1,4 +1,4 @@
-package com.example.kafka.blog;
+package com.example.blog.kafka;
 
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.producer.ProducerConfig;
